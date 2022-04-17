@@ -8,6 +8,6 @@ The app allows the course administrators to view and collect student registratio
 
 ![Registration 2](https://github.com/antonyebrown/VAULT_Registration/blob/main/vaultreg2.PNG)
 
-![Registration 3](hhttps://github.com/antonyebrown/VAULT_Registration/blob/main/vaultreg3.PNG)
+![Registration 3](https://github.com/antonyebrown/VAULT_Registration/blob/main/vaultreg3.PNG)
 
 ![Registration 4](https://github.com/antonyebrown/VAULT_Registration/blob/main/vaultreg4.PNG)
