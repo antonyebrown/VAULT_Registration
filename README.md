@@ -11,3 +11,10 @@ The app allows the course administrators to view and collect student registratio
 ![Registration 3](https://github.com/antonyebrown/VAULT_Registration/blob/main/vaultreg3.PNG)
 
 ![Registration 4](https://github.com/antonyebrown/VAULT_Registration/blob/main/vaultreg4.PNG)
+
+### Skills used:
+	
+**Dash Enterprise**
+* User Input
+* Database management and display
+* External Links
