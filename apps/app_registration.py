@@ -138,7 +138,9 @@ def layout():
                                         ],
                                     ),
                                     label='Do you have previous Coding Experience?'
-                                ),
+                                ),                                                               
+                            ]),
+                            ddk.Row([
                                 ddk.ControlItem(
                                     dcc.Checklist(
                                         id="learn-tools",
@@ -162,17 +164,14 @@ def layout():
                                     ),
                                     label='What tools are you most interested in learning about?'
                                 ),
-                            ]),
-                            ddk.Row([
                                 ddk.ControlItem(
                                     dcc.Textarea(
                                         id='comments',
                                         value='Please provide any additional comments here.',
                                         style={'width': '100%', 'height': 300},
-                                    ),
-                                    label='Additional Comments'
-                                ),
-                            ]),
+                                    ),                                    
+                                ), 
+                            ]),                           
                             ddk.Modal(
                                 children=[
                                     html.Button("Submit your Registration", id="button-main-one", n_clicks=0)
