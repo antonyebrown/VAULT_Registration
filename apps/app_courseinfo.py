@@ -12,11 +12,11 @@ from app import app
 context = """
 The documents below contain course information and prerequisites:
 
-[Getting Started with VAULT](https://plotly-enterprise-afac.afdatalab.af.mil/Workspaces/edit/vault-101/files/download/?id=a627c8e2-138d-46a4-b35c-80a7b0e35ad4)
+[Getting Started with VAULT](https://plotly-enterprise-afac.afdatalab.af.mil/Workspaces/edit/vault-101/files/download/?id=f071fcec-9434-4e7a-910d-9457fc22f6f3)
 
-[VAULT 101 Intro and Prerequisites](https://plotly-enterprise-afac.afdatalab.af.mil/Workspaces/edit/vault-101/files/download/?id=8611657d-453c-4a3c-9112-f5de3651afe3)
+[VAULT 101 Intro and Prerequisites](https://plotly-enterprise-afac.afdatalab.af.mil/Workspaces/edit/vault-101/files/download/?id=1c064dad-2afa-4288-b379-821655d11fbf)
 
-[VAULT 101 Current Course Schedule](https://plotly-enterprise-afac.afdatalab.af.mil/Workspaces/edit/vault-101/files/download/?id=2ec6549f-9ab4-4fd6-a31e-a167b214b3dc)
+[VAULT 101 Current Course Schedule](https://plotly-enterprise-afac.afdatalab.af.mil/Workspaces/edit/vault-101/files/download/?id=28cfaace-58fb-4f1d-8816-a86b9a4f55f9)
 
 Please take the time before the course to look over the intro and pre-req instructions and ensure that you have access to the following in VAULT:
 	
