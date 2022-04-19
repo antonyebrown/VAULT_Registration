@@ -9,15 +9,12 @@ import dash_design_kit as ddk
 
 from app import app
 
-context = """
+context1 = """
 The documents below contain course information and prerequisites:
 
-[Getting Started with VAULT](https://plotly-enterprise-afac.afdatalab.af.mil/Workspaces/edit/vault-101/files/download/?id=f071fcec-9434-4e7a-910d-9457fc22f6f3)
+            """
 
-[VAULT 101 Intro and Prerequisites](https://plotly-enterprise-afac.afdatalab.af.mil/Workspaces/edit/vault-101/files/download/?id=1c064dad-2afa-4288-b379-821655d11fbf)
-
-[VAULT 101 Current Course Schedule](https://plotly-enterprise-afac.afdatalab.af.mil/Workspaces/edit/vault-101/files/download/?id=28cfaace-58fb-4f1d-8816-a86b9a4f55f9)
-
+context2 = """
 Please take the time before the course to look over the intro and pre-req instructions and ensure that you have access to the following in VAULT:
 	
 * Access to Databricks and either the AFAC, AFOTEC, or AFDV cluster
@@ -29,6 +26,9 @@ If you run into any problems with these instructions, please either put in a hel
 
             """
 
+context3 = """
+  
+            """
 
 def layout():
     layout = html.Div(
@@ -39,7 +39,13 @@ def layout():
                         width=100,
                         children=[
                             ddk.CardHeader(title="VAULT 101 Course Information"),
-                            dcc.Markdown(context),
+                            dcc.Markdown(context1),
+                            dcc.Link("Getting Started With Vault", href=("/workspace/documents/Getting Started with Vault.pptx")),
+                            dcc.Markdown(context3),
+                            dcc.Link("VAULT 101 Intro and Prerequisites", href=("/workspace/documents/VAULT 101 Course--Intro & Prereq's_Feb 2022.docx")),
+                            dcc.Markdown(context3),
+                            dcc.Link("VAULT 101 Current Course Schedule", href=("/workspace/documents/VAULT 101 Schedule.xlsx")),
+                            dcc.Markdown(context2),
                         ],
                     ),
                 ],
@@ -49,4 +55,13 @@ def layout():
     return layout
 
 
+@app.callback(
+    Output("download-image", "data"),
+    Input("btn_image", "n_clicks"),
+    prevent_initial_call=True,
+)
+def func(n_clicks):
+    return dcc.send_file(
+        "./assets/Getting Started with Vault.pptx"
+    )
 
